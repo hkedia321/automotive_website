@@ -1,0 +1,277 @@
+@font-face {
+	font-family: myVijaya;
+	src: url(vijaya.ttf);
+}
+.border{
+	border: solid red 0px;
+}
+.footer{
+	position: relative;
+	bottom: 0px;
+}
+body{
+	/*font-family:"Times New Roman";*/
+	font-family: sans-serif;
+	font-family:myVijaya;
+	font-size: 180%;
+	text-transform: uppercase;
+	background-color:black;
+	color:white;
+}
+h1{
+	font-size: 250%;
+	text-transform: none;
+	display: inline-block;
+}
+
+nav a{
+	display: inline-block!important;
+	padding:0.3%;
+	margin-right:1.9%;
+	border-radius:10%;
+	background-color: rgba(243, 232, 243, 0.11);
+	transition:all 0.5s cubic-bezier(0.390, 0.500, 0.150, 1.360) 0.1s;
+	-webkit-transition:all 0.5s cubic-bezier(0.390, 0.500, 0.150, 1.360) 0.1s;
+	-moz-transition:all 0.5s cubic-bezier(0.390, 0.500, 0.150, 1.360) 0.1s;
+}
+.active{
+	background-color:rgba(255, 255, 255, 0.76);
+	color:#000000;
+}
+nav a:hover{
+	background-color: #223224;
+	color: red;
+	text-decoration: none;
+}
+#home{
+	margin-left: 1.5%;
+	padding-left: 3.5%;
+	padding-right: 3.5%;
+}
+#service{
+	padding-left:3%;
+	padding-right:3%;
+}
+#news{
+	padding-left:4%;
+	padding-right:4%;
+}
+#sell{
+	padding-left:4.5%;
+	padding-right:4.5%;
+}
+#finance{
+	padding-left:2.5%;
+	padding-right:2.5%;
+}
+#about{
+	padding-left:3%;
+	padding-right:3%;
+}
+#admin{
+	padding-left:1.5%;
+	padding-right:1.5%;
+}
+.red{
+	color: red;
+}
+#logo{
+	max-width: 20%;
+	max-height: 20%;
+	min-height: 10%;
+	min-height:10%;
+}
+.search{
+	/*	border: solid red 1px;*/
+	max-height:2% !important;
+}
+
+.search h3{
+	text-align: center;
+	margin-left:-2%;
+}
+.search input{
+	display: block;
+	width: 80%;
+}
+.search #state,#city,#model,#car,#vehicle,#submit{
+	background-color: rgba(255, 255, 255, 0.12);
+	color: white;
+	margin-left: 6%;
+}
+#sellDiv .textfield,.pricemoney{
+	background-color: rgba(255, 255, 255, 0.12);
+	color: white;
+}
+.search #submit{
+	margin-right:14%;
+	width:30%;
+	transition:all 0.5s ease 0.1s;
+}
+.search #submit:hover{
+	background-color: #223224;
+	color: red;
+}
+
+#audi1{
+	margin-top:4.4%;
+	padding-bottom: 5%;
+}
+.topdeals{
+	position:static;
+	float:left;
+	/*width:60%;
+	height:50%;*/
+	/*margin-top: 30%;*/
+}
+.topdeals h3{
+	text-align: center;
+}
+.topdeals .audiq7img{
+	display: inline-block;
+}
+.topdeals .audiq7h{
+	margin-top: 6%;
+	float: right;
+	text-transform: none;
+}
+#audirs6rupee{
+	margin-left: 0%;
+}
+.topdeals img .bestdeals img{
+	-webkit-transition:all 5s cubic-bezier(0.390, 0.500, 0.150, 1.360) 0.1s;
+	-moz-transition:all 5s cubic-bezier(0.390, 0.500, 0.150, 1.360) 0.1s;
+	transition:all 5s cubic-bezier(0.390, 0.500, 0.150, 1.360) 0.1s;
+}
+.topdeals img:hover,.bestdeals img:hover{
+	border:solid white 3px;
+	border-radius: 10%;
+}
+#audia6car{
+	margin-top:10%;
+}
+#audirs6car{
+	margin-top:10%;
+}
+#audia6h{
+	margin-top: 15%;
+}
+#audirs6h{
+	margin-top: -35%;
+}
+.bestdeals h3{
+	text-align: center;
+}
+.specifics{
+	margin-top:1%;
+	margin-left: 3%;
+	margin-right: 20%;
+	background-color:rgba(249, 247, 248, 0.03);
+	margin-bottom: 15%;
+}
+.specifics h3{
+	background-color:rgba(236, 245, 244, 0.03);
+	text-align: center;
+}
+.specifics h4{
+	display: inline-block;
+	position: relative;
+	background-color: rgba(238, 237, 241, 0.15);
+	text-align: center;
+	padding:10.4%;
+}
+.footer{
+	clear:both;
+	margin-top: 5%;
+}
+.contact{
+	text-decoration: none;
+}
+.copy{
+	display: inline-block;
+	position: relative;
+	margin-top: 3.5%;
+	margin-bottom: -130%;
+}
+.fbtw{
+	margin-top:-1.8%;
+}
+.fb,.tw{
+	max-width: 10%;
+	max-height: 10%;
+	min-height: 5%;
+	min-height:5%;
+}
+hr{
+	margin-top: -10%;
+}
+a:hover{
+	text-decoration: none;
+}
+#adminDiv h1,h3{
+	text-align: center;
+}
+#adminDiv #adminSubmit,#sellDiv .submit{
+	background-color:rgba(191, 29, 29, 0.21);
+	color: red;
+	border:none;
+	padding:2% 6%;
+	border-radius: 15%;
+	margin-right: 25%;
+	transition:all 0.5s ease 0.1s;
+}
+#adminDiv .username{
+	width:110%;
+	color: black;
+}
+#adminDiv #adminSubmit:hover,#sellDiv .submit:hover{
+	background-color: blue;
+	color: white;
+}
+#adminDiv form{
+	margin-left: 37%;
+	margin-bottom: 7%;
+}
+.aboutDiv .footer{
+	position:absolute !important;
+	bottom: 0px!important;
+	margin-left: -7%;
+}
+.aboutDiv .reachus{
+	margin-top: 13%;
+}
+.aboutDiv #phonepic{
+	max-width: 6%;
+	max-height:6%;
+}
+.aboutDiv #emailpic{
+	max-width: 7%;
+	max-height:7%;
+	margin-top: -3%;
+}
+.aboutDiv #emailtext{
+	display: inline-block;
+	margin-top: -3%;
+	margin-left: 5%;
+}
+.financeDiv0 .footer,.newsDiv0 .footer,.serviceDiv0 .footer,.sellDiv0 .footer{
+	position: absolute;
+	bottom: 0;
+}
+#sellDiv .model{
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.12);
+	color: white;
+	/*width:100%;*/
+	padding-right: 25%;
+	float: left;
+
+}
+#sellDiv .submit{
+	margin-right: 0%;
+}
+#sellDiv .textfield{
+	margin-top: -5.6%;
+	margin-left: 40%;
+}
+

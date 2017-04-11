@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Harshit Kedia">
+	<meta name="keywords" content="audi, cars, expensive cars, luxurious cars">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/js.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
+	<!-- <link href="http://db.onlinewebfonts.com/c/e2febb205f1bda4c972f37857f327b82?family=Vijaya" rel="stylesheet" type="text/css">
+	 --><link rel="stylesheet" type="text/css" href="css/css.css">
+	
+	<link rel="icon" href="imgs/a.png">
+	<title>Auto Motive-home</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1><span class="red">A</span>uto <span class="red">M</span>otive</h1>
+			<img src="imgs/wheel.png" alt="logo" style="margin-top:1%;margin-right:3%" id="logo" class="pull-right col-md-1 img-responsive">
+			<nav>
+				<a id="home" class="active" href="html/home.html">Home</a>
+				<a id="service" href="html/service.html">Service</a>
+				<a id="news" href="html/news.html">News</a>
+				<a id="sell" href="html/sell.html">Sell</a>
+				<a id="finance" href="html/finance.html">Financing</a>
+				<a id="about" href="html/about.html">About us</a>
+				<a id="admin" href="html/admin.html">Admin preview</a>
+			</nav>
+		</header>
+		<div id="search" class="search container border col-md-4">
+			<h3>Search Vehicles</h3>
+			<form>
+				<input list="states" placeholder="SELECT STATE" type="text" id="state" name="state">
+				<datalist id="states">
+					<option value="MAHARASHTRA">
+					<option value="TAMIL NADU">
+					<option value="WEST BENGAL">
+					<option value="GUJURAT">
+					<option value="JAMMU AND KASHMIR">
+					<option value="OTHERS">
+				</datalist>
+				<br><br>
+				<input list="cities" placeholder="SELECT CITY" type="text" id="city" onclick="putCities()" name="city">
+				<datalist id="cities">
+					<option id="coption1" value="">
+					<option id="coption2" value="">
+					<option id="coption3" value="">
+					<option id="coption4" value="">
+					<option id="coption5" value="">
+				</datalist>	
+				<br><br>
+				<input list="cars" placeholder="SELECT NAME" type="text" id="car" name="car">
+				<datalist id="cars">
+					<option id="caoption1" value="SEDAN">
+					<option id="caoption2" value="CABRIOLET">
+					<option id="caoption3" value="AVANT">
+					<option id="caoption4" value="SPORTSBLACK">
+					<option id="caoption5" value="COUPE">
+					<option id="caoption6" value="SUV">
+					<option id="caoption7" value="VAN">
+					<option id="caoption8" value="OTHERS">
+
+				</datalist>	
+				<br><br>
+				<input list="models" placeholder="SELECT MODEL" type="text" id="model" name="model">
+				<datalist id="models">
+					<option id="caoption1" value="A3">
+					<option id="caoption2" value="A4">
+					<option id="caoption3" value="A6">
+					<option id="caoption4" value="S6">
+					<option id="caoption5" value="RS 6">
+					<option id="caoption6" value="RS 7">
+					<option id="caoption7" value="A8 L">
+					<option id="caoption8" value="Q3">
+					<option id="caoption9" value="Q5">
+					<option id="caoption10" value="Q7">
+					<option id="caoption11" value="OTHERS">
+				</datalist>	
+				<br><br>
+				<input list="vehicles" placeholder="SELECT VEHICLE TYPE" type="text" id="vehicle" name="vehicle">
+				<datalist id="vehicles">
+					<option id="caoption1" value="400 HP ENGINE">
+					<option id="caoption2" value="800 HP ENGINE">
+					<option id="caoption3" value="1200 HP ENGINE">
+					<option id="caoption4" value="">
+					<option id="caoption5" value="others">
+				</datalist>	
+				<br>
+				<input type="submit" id="submit" value="SEARCH" class="pull-right">
+			</form>
+		</div>
+		<div id="audi1" class="col-md-7 border container">
+			<img src="imgs/audi1.png" alt="Audi car" class="img-responsive audi1img">
+		</div>
+		<br>
+		<div class="topdeals container col-md-4 pull-left border">
+			<h3>TOP DEALS</h3>
+			<div class="audiq7">
+				<a href="http://www.google.com" ><img src="imgs/audiq7.png" onmouseover="specific('q7')" onmouseout="specific('out')" id="audiq7car" alt="Audi car" class="img-responsive col-md-9 audiq7img"></a>
+				<span class="audiq7h">
+				<h4 style="font-size:140%">Audi Q7</h4>
+				<h4 class="red" style="font-size:120%">&#8377 64,23,999</h4>
+			</span>
+			</div> 
+			<br><br>
+			<div class="audia6">
+				<a href="http://www.google.com" ><img src="imgs/audia6.png" id="audia6car" onmouseover="specific('a6')" onmouseout="specific('out')" alt="Audi car" class="img-responsive col-md-9 audiq7img"></a>
+				<span class="audiq7h" id="audia6h">
+				<h4 style="font-size:140%">Audi A6</h4>
+				<h4 class="red" style="font-size:120%">&#8377 84,99,999</h4>
+			</span>
+			</div> 
+			<br><br>
+			<div class="audirs6">
+				<a href="http://www.google.com" ><img src="imgs/audirs6.png" id="audirs6car" onmouseover="specific('rs6')" onmouseout="specific('out')" alt="Audi car" class="img-responsive col-md-9 audiq7img"></a>
+				<span class="audiq7h" id="audirs6h">
+				<h4 style="font-size:140%">&nbsp;&nbsp;Audi RS6</h4>
+				<h4 class="red" id="audirs6rupee" style="font-size:120%">&#8377 5,34,99,999</h4>
+			</span>
+			</div> 
+			<br><br>
+		</div>
+		<div class="bestdeals container col-md-7 border">
+			<h3>BEST DEALS</h3>
+			<div class="audia4 border container col-md-6">
+				<a href="http://www.google.com" ><img src="imgs/audia4.png" id="audia4car" onmouseover="specific('a4')" onmouseout="specific('out')" alt="Audi car" class="img-responsive col-md-17"></a>
+				<span class="audia4h" id="audia4h" style="text-align:center;">
+				<h4 style="font-size:140%">Audi A4</h4>
+				<h4 class="red" style="font-size:120%">&#8377 1,14,99,999</h4>
+			</span>
+			</div> 
+			<div class="audia8 border container col-md-6">
+				<a href="http://www.google.com" ><img src="imgs/audia8.png" id="audia8car" alt="Audi car" onmouseover="specific('a8')" onmouseout="specific('out')" class="img-responsive col-md-17"></a>
+				<span class="audia8h" style="text-align:center;" id="audia8h">
+				<h4 style="font-size:140%">Audi A8</h4>
+				<h4 style="font-size:120%;margin-top:-5%;">2014</h4>
+				<h4 class="red" style="font-size:120%">&#8377 3,54,39,999</h4>
+			</span>
+			</div> 
+		</div>
+		<div class="specifics border col-md-5">
+			<h3>SPECIFICATIONS</h3>
+			<h4 id="specific_h4">Hover over any car to see the specifications&nbsp;</h4>
+		</div>
+		<script>
+		search_height();
+		</script>
+		<br><br>
+		<footer>
+			<div  class="border footer">
+				<br>
+			<span class="pull-right copy">&copy;copyright reserved@2016 <i class="red">&nbsp;&nbsp;AUTO MOTIVE PVT. LTD</i></span>
+			<span class="pull-right fbtw"><a href="http://www.fb.com"><img src="imgs/fb.png" class="img-responsive fb col-md-1"></a>&nbsp;&nbsp;<a href="http://www.twitter.com"><img src="imgs/tw.png" class="img-responsive tw col-md-1"></a></span>
+			<a href="html/about.html" class="contact">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT US</a>
+			<br>
+		</div>
+		</footer>
+	</div>
+</body>
+</html>
+
+
